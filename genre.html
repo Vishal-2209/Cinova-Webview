@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Responsive Squares with Images and Titles</title>
+<title>Genre</title>
 <style>
   body {
     background-color: black;
@@ -25,6 +25,12 @@
   
   .tile {
     width: calc(50% - 20px); /* 50% width with 20px gap */
+    transition: all.3s;
+  }
+
+  .tile:hover{
+    transform: scale(1.2);
+    z-index: 2;
   }
 
   /* Media query for tablets */
@@ -56,8 +62,10 @@
     <div class="tile"><img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/5278/1535278-a-e9dbbe66922b"></div>
     <div class="tile"><img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/5299/1535299-a-e6296badeb14"></div>
     <div class="tile"><img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/5301/1535301-a-9bb68bcd147c"></div>
-    <div class="tile"><img src=""></div>
-    <div class="tile"><img src=""></div>
+    <div class="tile"><img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/5292/1535292-a-5739f9c84b63"></div>
+    <div class="tile"><img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/5246/1535246-a-27373cc1a222"></div>
+    <div class="tile"><img src="https://www.hotstar.com/in/browse/category/documentary/8785"></div>  
+    <div class="tile"><img src=""></div> 
   </div>
 </body>
 </html>
