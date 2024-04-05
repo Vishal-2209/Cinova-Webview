@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #000000, #342833);
+            color: #fff;
+        }
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .article {
+            background-color: #333;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            width: calc(33.33% - 20px);
+            transition: transform 0.3s ease;
+            background-color: #000;
+        }
+        .article:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+        .article h2 {
+            margin-top: 0;
+            color: #fff;
+        }
+        .article p {
+            margin-bottom: 0;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #ff4500;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .article {
+                width: calc(100% - 20px);
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="article">
+            <img src="https://via.placeholder.com/300x200" alt="Placeholder Image">
+            <h2>Headline 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero quis leo fermentum, sed lacinia lacus rutrum.</p>
+            <p><a href="#">Read more...</a></p>
+        </div>
+        <div class="article">
+            <img src="https://via.placeholder.com/300x200" alt="Placeholder Image">
+            <h2>Headline 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero quis leo fermentum, sed lacinia lacus rutrum.</p>
+            <p><a href="#">Read more...</a></p>
+        </div>
+        <div class="article">
+            <img src="https://via.placeholder.com/300x200" alt="Placeholder Image">
+            <h2>Headline 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero quis leo fermentum, sed lacinia lacus rutrum.</p>
+            <p><a href="#">Read more...</a></p>
+        </div>
+    </div>
+</body>
+</html>
