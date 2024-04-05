@@ -10,85 +10,54 @@
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items from the top */
     height: 100vh;
   }
 
   .container {
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-top: 15px;
+    margin-left: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 20px;
   }
   
-  .square {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 100%;
-    position: relative; /* Added */
-    transition: all.3s;
+  .tile {
+    width: calc(50% - 20px); /* 50% width with 20px gap */
   }
 
-  .square img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .square .title {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    text-align: center;
-    padding: 8px 0; /* Adjust as needed */
-    font-size: 14px; /* Adjust as needed */
-  }
-
-  @media (max-width: 768px) {
-    .square {
-      width: 150px;
-      height: 150px;
-      border-radius: 100%;
+  /* Media query for tablets */
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+    .tile {
+      width: calc(33.33% - 20px); /* 3 tiles per row */
     }
   }
 
-  @media (max-width: 576px) {
-    .square {
-      width: 100px;
-      height: 100px;
-      border-radius: 100%;
+  /* Media query for desktops */
+  @media screen and (min-width: 1025px) {
+    .tile {
+      width: calc(20% - 20px); /* 5 tiles per row */
     }
   }
 
-  .square:hover{
-    transform: scale(1.2);
+  .tile img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
-
 </style>
 </head>
 <body>
   <div class="container">
-    <div class="square">
-      <img src="assets/genre/Rounded_20240331_121836.png" alt="Image 1">
-      <div class="title">Anime</div>
-    </div>
-    <div class="square">
-      <img src="assets/genre/Rounded_20240331_121911.png" alt="Image 2">
-      <div class="title">Hollywood</div>
-    </div>
-    <div class="square">
-      <img src="assets/genre/Rounded_20240331_121947.png" alt="Image 3">
-      <div class="title">Bollywood</div>
-    </div>
-    <div class="square">
-      <img src="assets/genre/Rounded_20240331_122013.png" alt="Image 4">
-      <div class="title">Comics</div>
-    </div>
+    <div class="tile"><img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/5298/1535298-a-7d27752d8350"></div>
+    <div class="tile"><img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/5284/1535284-a-656c6b45a905"></div>
+    <div class="tile"><img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/5248/1535248-a-35ccd1ea9ec0"></div>
+    <div class="tile"><img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/5278/1535278-a-e9dbbe66922b"></div>
+    <div class="tile"><img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/5299/1535299-a-e6296badeb14"></div>
+    <div class="tile"><img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/5301/1535301-a-9bb68bcd147c"></div>
+    <div class="tile"><img src=""></div>
+    <div class="tile"><img src=""></div>
   </div>
 </body>
 </html>
